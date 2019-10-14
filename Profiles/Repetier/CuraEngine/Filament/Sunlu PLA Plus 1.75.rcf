@@ -1,0 +1,10 @@
+[filament]
+name = Sunlu PLA Plus 1.75
+diameter = 1.75
+multiplierPercent = 100
+printingTemperature = 220
+enableCooling = True
+bedTemperature = 0
+fanSpeedMin = 50
+fanSpeedMax = 100
+minimalLayerTime = 5
