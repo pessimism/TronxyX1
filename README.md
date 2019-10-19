@@ -25,3 +25,7 @@ Drivers - The USB to serial interface driver required to control the printer by 
 Models - Model files for the factory demo part, useful calibration items and upgrade parts specific to the printer
 
 Profiles - Printer and Filament configuration profiles I have built and found to work well with my particular setup.
+
+## Bed Adhesion
+
+I had difficulty with adhesion with the bare Garolite build plate and Sunlu PLA+.  I added a layer of inexpensive 3M green painter's tape locally purchased and had much better results.
