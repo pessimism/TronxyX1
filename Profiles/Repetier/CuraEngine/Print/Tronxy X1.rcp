@@ -1,8 +1,8 @@
 [print]
 name = Tronxy X1
 defaultQuality = VuNP3jYZ0BTtmNX2FSvXhnBp6onDagFQ
-travelSpeedMin = 150
-travelSpeedMax = 150
+travelSpeedMin = 200
+travelSpeedMax = 200
 firstLayerSpeedMin = 30
 firstLayerSpeedMax = 30
 infillSpeedMin = 50
@@ -32,7 +32,7 @@ wipeAndPrimeTower = True
 oozeShield = False
 enableRetraction = True
 retractionSpeed = 40
-retractionDistance = 4
+retractionDistance = 6
 multiExtruderSwitchAmount = 16
 startGCode = """
 ; Default start code
@@ -111,4 +111,4 @@ name = 0.15 mm
 signature = VuNP3jYZ0BTtmNX2FSvXhnBp6onDagFQ
 layerHeight = 0.15
 layer0widthPercent = 100
-firstLayerHeight = 0.3
+firstLayerHeight = 0.15
