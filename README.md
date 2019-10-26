@@ -29,3 +29,10 @@ Profiles - Printer and Filament configuration profiles I have built and found to
 ## Bed Adhesion
 
 I had difficulty with adhesion with the bare Garolite build plate and Sunlu PLA+.  I added a layer of inexpensive 3M green painter's tape locally purchased and had much better results.
+
+After printing and removing several items I had adhesion issues again which were improved by wiping down the tape surface with alcohol, finger oils can make the difference between adhesion and failure.
+
+## Firmware Calibration
+I found that even after belt tensioning to the best of my ability with the provided hardware, I had to very slightly increase the X steps/mm to get true squares/circles.  I attribute this to differences in belt tension between axes
+
+I found my extruder was underextruding and steps/mmm needed to be increased by almost 10%.  Never assume factory calibration is correct.  This can also change from one filament to the other.  I did the adjustment using [this guide](https://all3dp.com/2/extruder-calibration-6-easy-steps-2/)
