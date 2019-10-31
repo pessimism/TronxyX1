@@ -36,3 +36,6 @@ After printing and removing several items I had adhesion issues again which were
 I found that even after belt tensioning to the best of my ability with the provided hardware, I had to very slightly increase the X steps/mm to get true squares/circles.  I attribute this to differences in belt tension between axes
 
 I found my extruder was underextruding and steps/mmm needed to be increased by almost 10%.  Never assume factory calibration is correct.  This can also change from one filament to the other.  I did the adjustment using [this guide](https://all3dp.com/2/extruder-calibration-6-easy-steps-2/)
+
+## Extruder Issues
+While trying to eliminate stringing and blobbing on prints I found that the bowden tube was not fully inserted into either coupler.  The end going into the hot end was also not cut flat, so I re-trimmed the end. Trimming and re-seating the tube noticeably improved print quality.
