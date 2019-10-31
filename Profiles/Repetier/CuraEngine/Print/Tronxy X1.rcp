@@ -31,8 +31,8 @@ dualExtrusion = 0
 wipeAndPrimeTower = True
 oozeShield = False
 enableRetraction = True
-retractionSpeed = 80
-retractionDistance = 4
+retractionSpeed = 60
+retractionDistance = 5
 multiExtruderSwitchAmount = 16
 startGCode = """
 ; Default start code
