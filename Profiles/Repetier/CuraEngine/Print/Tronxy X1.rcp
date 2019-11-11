@@ -1,6 +1,6 @@
 [print]
 name = Tronxy X1
-defaultQuality = M5URwcOTy7gcNqfCJusoRFlIBwq5JM5C
+defaultQuality = VuNP3jYZ0BTtmNX2FSvXhnBp6onDagFQ
 travelSpeedMin = 100
 travelSpeedMax = 200
 firstLayerSpeedMin = 25
@@ -67,8 +67,8 @@ postSwitchExtruderCode =
 wipeAndPrimeTowerVolume = 15
 retractionMinimumTravel = 1.5
 minimumExtrusionBeforeRetract = 0.02
-zhop = 0.15
-skirtLineCount = 2
+zhop = 0.4
+skirtLineCount = 0
 skirtDistance = 0.5
 skirtMinimumLength = 100
 solidInfillTop = True

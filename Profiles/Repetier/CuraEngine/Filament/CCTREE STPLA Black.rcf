@@ -1,0 +1,10 @@
+[filament]
+name = CCTREE STPLA Black
+diameter = 1.75
+multiplierPercent = 100
+printingTemperature = 200
+enableCooling = True
+bedTemperature = 0
+fanSpeedMin = 50
+fanSpeedMax = 100
+minimalLayerTime = 15
