@@ -14,6 +14,8 @@ I purchased my Tronxy X1 at [GearBest](https://www.gearbest.com/3d-printers-3d-p
 
 My first filament purchase was the [Sunlu PLA+](http://www.sunlugw.com/pd.jsp?id=52#_pp=151_1343) from [Amazon Canada](https://www.amazon.ca/gp/product/B07FXJ6PKQ/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&psc=1).  Cost for the 1KG spool was $20.39 on sale plus taxes totalling $23.04 (I have a Prime membership so did not pay extra for shipping).  The filament appears to be of good quality so far and I have not yet had any clogging or other issues caused by filament quality.
 
+[CCTREE PLA](https://www.amazon.ca/CCTREE-1-75mm-PLA-Printer-Filament/dp/B07737W8Y9) So far seems to print at a lower temperature with fewer stringing/blobbing issues than the Sunlu.
+
 I purchased this [ten pack of roller wheels](https://www.amazon.ca/gp/product/B07CWM3GCM/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&psc=1) at a shipped cost of $1.58 each to replace one wheel shipped with the unit that was scratched causing the x-axis to catch on the rail at a certain point.  The new wheel worked but these appear to be of poor quality, do not spin effortlessly by hand and have slight surface imperfections in the plastic.  I will search for higher quality rollers later as an upgrade option.
 
 ## Folder Structure
