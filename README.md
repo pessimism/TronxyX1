@@ -28,11 +28,15 @@ Models - Model files for the factory demo part, useful calibration items and upg
 
 Profiles - Printer and Filament configuration profiles I have built and found to work well with my particular setup.
 
+Marlin 2.0 Config - Configuration files to build Marlin 2.0 firmware for the printer
+
 ## Bed Adhesion
 
 I had difficulty with adhesion with the bare Garolite build plate and Sunlu PLA+.  I added a layer of inexpensive 3M green painter's tape locally purchased and had much better results.
 
 After printing and removing several items I had adhesion issues again which were improved by wiping down the tape surface with alcohol, finger oils can make the difference between adhesion and failure.
+
+After more printing I've abandoned the tape for now and lightly sanded the Garolite with sandpaper, cleaned with alcohol and use a layer of cheap glue stick that I wash off and reapply every few prints.  I find this faster and simpler than dealing with the tape, which I have found in some instances can actually be lifted off the Garolite by a warping print.
 
 ## Firmware Calibration
 I found that even after belt tensioning to the best of my ability with the provided hardware, I had to very slightly increase the X steps/mm to get true squares/circles.  I attribute this to differences in belt tension between axes
