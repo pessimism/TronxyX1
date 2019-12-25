@@ -66,7 +66,11 @@ I had to make a few adjustments to the stock example Configuration and Configura
 
 + The bed offsets were incorrect so prints were not centered in the print area
 + The thermal runaway protection was too aggressive for my room temperature and heater calibration and would error before heating was complete.  I relaxed the values as described in the documentation
++ I added my PID heater calibration values to replace the firmware defaults and made sure PID temperature control was enabled.  Further information [here](https://reprap.org/wiki/PID_Tuning)
 + I've noticed some inconsistencies in the keys required to activate menu items.  Some use left/right, some use up to confirm.  Have not resolved that yet, but all functions do work.
 
 ## Belt idler upgrade to tensioners
 I purchased these [2020 extrusion compatible belt tensioners](https://www.aliexpress.com/item/4000056015276.html?spm=a2g0s.9042311.0.0.2c824c4djNLGq6) ~$15 to replace the stock single sided acrylic brackets and smoothe idler bearings.  This was the single largest upgrade in print quality I have done.  They are far better quality than the stock hardware, have toothed idlers to better fit the belt, and made a large improvement in the printer's ability to make accurate circles.  This was noticable right away in the stock demo pillar file included with the printer.
+
+## Part Cooling Fan
+I printed [this](https://www.thingiverse.com/thing:2699842) and added a 5015 fan using spare mounting nuts and screws included with the printer.  There is an open fan header on the Melzi board for this purpose.  To get proper alignment I had to rotate the heat block slightly and tweak the fan mount/shroud a little.  I have found the fan helps to prevent distortion and stringing on small posts, but it also causes the base of parts to curl up off the bed, so it is only useful in specific circumstances.
