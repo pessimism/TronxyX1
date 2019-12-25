@@ -41,3 +41,32 @@ I found my extruder was underextruding and steps/mmm needed to be increased by a
 
 ## Extruder Issues
 While trying to eliminate stringing and blobbing on prints I found that the bowden tube was not fully inserted into either coupler.  The end going into the hot end was also not cut flat, so I re-trimmed the end. Trimming and re-seating the tube noticeably improved print quality.
+
+## Marlin 2.0
+I opted to upgrade the printer to Marlin 2.0 from the stock Repetier 0.91 firmware.  This gave me thermal runaway protection, a serious omission from the printer.  I was also able to add several features from much more expensive units such as print pausing and resume from power failure.  This process requires several parts to be purchased as the stock Melzi board does not ship with a bootloader installed so it can't be flashed by USB.  The way I completed the process requires:
+
+[An Arduino UNO or compatible board](https://www.amazon.ca/gp/product/B01MTMDT29/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&psc=1) ~$15
+
+[Female to Female AND Female to Male Dupont Jumper Wires](https://www.amazon.ca/gp/product/B01EV70C78/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1) ~$12
+
+A computer with the [Arduino IDE](https://www.arduino.cc/en/Main/Software) installed
+
+A copy of the [Marlin 2.0 Source Code](http://marlinfw.org/meta/download/)
+
+I will not detail all steps here as there are several good guides available online to outline the process.  I found [this one](https://www.instructables.com/id/Flashing-a-Bootloader-to-the-CR-10/) to be the most accurate.  In a nutshell you must
+
++ Program the UNO device via USB to act as a flashing tool 
++ Wire the UNO device to the Melzi board using six jumper wires
++ Flash a bootloader to the Melzi board via PC USB -> UNO -> Melzi connection
++ Disconnect UNO board
++ Build Marlin 2.0 using the correct Configuration.h file and any further adjustments to the Configuration_adv.h file
++ Flash Marlin to the Melzi board via PC USB
+
+I had to make a few adjustments to the stock example Configuration and Configuration_adv files for the Tronxy X1:
+
++ The bed offsets were incorrect so prints were not centered in the print area
++ The thermal runaway protection was too aggressive for my room temperature and heater calibration and would error before heating was complete.  I relaxed the values as described in the documentation
++ I've noticed some inconsistencies in the keys required to activate menu items.  Some use left/right, some use up to confirm.  Have not resolved that yet, but all functions do work.
+
+## Belt idler upgrade to tensioners
+I purchased these [2020 extrusion compatible belt tensioners](https://www.aliexpress.com/item/4000056015276.html?spm=a2g0s.9042311.0.0.2c824c4djNLGq6) ~$15 to replace the stock single sided acrylic brackets and smoothe idler bearings.  This was the single largest upgrade in print quality I have done.  They are far better quality than the stock hardware, have toothed idlers to better fit the belt, and made a large improvement in the printer's ability to make accurate circles.  This was noticable right away in the stock demo pillar file included with the printer.
