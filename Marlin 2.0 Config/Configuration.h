@@ -476,9 +476,9 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   // Tronxy X1
-  #define DEFAULT_Kp 15.88
-  #define DEFAULT_Ki 0.94
-  #define DEFAULT_Kd 67.32
+#define DEFAULT_Kp 13.41
+#define DEFAULT_Ki 0.71
+#define DEFAULT_Kd 63.70
 
   // MakerGear
   //#define DEFAULT_Kp 7.0
