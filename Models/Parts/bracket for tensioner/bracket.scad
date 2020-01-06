@@ -5,7 +5,7 @@
 //All dimensions in MM
 
 //Fudge factor for hole sizes to accomodate printer/filament tolerance
-fudge = 0.5;
+fudge = 0.6;
 
 //Dimensions for bracket
 length = 74;
@@ -13,7 +13,7 @@ height = 40;
 thickness = 4;
 
 //Dimensions for notch to allow v-wheel to clear
-nlength = 30; 
+nlength = 28; 
 nheight = 20;
 
 //Pulley slot dimensions
@@ -21,11 +21,12 @@ pheight     = 9.2 + fudge;
 prad        = pheight/2;
 pfromleft   = 7.3;
 pfromtop    = 5.3;
-pslotlength = 28.7;
+pslotlength = 27.5;
 
 //Tensioner screw holes (M3)
 tensioner_screw_hole_diameter              = 3 + fudge;
 tensioner_screw_hole_center_dist_from_edge = 3.5;
+tensioner_screw_hole_center_dist_from_mid = 2;
 
 //T-Nut screw holes (M4)
 tnut_screw_hole_diameter     = 4 + fudge;
@@ -85,7 +86,7 @@ difference()
     }
     
     //Move lower tensioner screw hole to correct place
-    translate([(tensioner_screw_hole_center_dist_from_edge),(height/2 + tensioner_screw_hole_center_dist_from_edge),0]){
+    translate([(tensioner_screw_hole_center_dist_from_edge),(height/2 + tensioner_screw_hole_center_dist_from_mid),0]){
         //lower tensioner screw hole
         cylinder(h = thickness, d = tensioner_screw_hole_diameter , center = false, $fn=facets);
     }
@@ -102,5 +103,5 @@ difference()
         cylinder(h = thickness, d = tnut_screw_hole_diameter , center = false, $fn=facets);
     }    
     
-    triangle(20,length-nlength,4);
+    triangle(18,length-nlength,4);
 }
