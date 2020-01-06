@@ -5,7 +5,7 @@
 //All dimensions in MM
 
 //Fudge factor for hole sizes to accomodate printer/filament tolerance
-fudge = 0.4;
+fudge = 0.5;
 
 //Dimensions for bracket
 length = 74;
@@ -37,6 +37,16 @@ facets = 40;
 
 //Constant for 10mm centering of T-Nut screw holes for 2020 extrusion
 2020_tnut_height = 10;
+
+//Thanks to https://github.com/openscad/MCAD/blob/master/triangles.scad
+module triangle(o_len, a_len, depth, center=false)
+{
+    centroid = center ? [-a_len/3, -o_len/3, -depth/2] : [0, 0, 0];
+    translate(centroid) linear_extrude(height=depth)
+    {
+        polygon(points=[[0,0],[a_len,0],[0,o_len]], paths=[[0,1,2]]);
+    }
+}
 
 //The bracket with the notch subtracted from it
 difference()
@@ -91,4 +101,6 @@ difference()
         //left tnut screw hole
         cylinder(h = thickness, d = tnut_screw_hole_diameter , center = false, $fn=facets);
     }    
+    
+    triangle(20,length-nlength,4);
 }
