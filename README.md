@@ -78,3 +78,8 @@ I purchased these [2020 extrusion compatible belt tensioners](https://www.aliexp
 
 ## Part Cooling Fan
 I printed [this](https://www.thingiverse.com/thing:2699842) and added a 5015 fan using spare mounting nuts and screws included with the printer.  There is an open fan header on the Melzi board for this purpose.  To get proper alignment I had to rotate the heat block slightly and tweak the fan mount/shroud a little.  I have found the fan helps to prevent distortion and stringing on small posts, but it also causes the base of parts to curl up off the bed, so it is only useful in specific circumstances.
+
+## Fan Upgrades
+I upgraded the hotend fan to [this](https://www.amazon.ca/gp/product/B009NQLT0M/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1) Noctua NF-A4x10 FLX fan for a huge decrease in operating noise.  The high pitched tone from the stock fan is completely gone and I have observed no cooling issues from the lower RPM fan
+
+I am planning to upgrade the generic 5015 fan to [this](https://www.digikey.ca/product-detail/en/sunon-fans/MF50151VX-B00U-A99/259-1829-ND/7691033) Sunon MF50151VX-B00U-A99 fan in hopes to reduce operating noise further
