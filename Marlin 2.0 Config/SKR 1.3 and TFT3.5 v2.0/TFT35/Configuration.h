@@ -40,8 +40,8 @@
  * if the display is not touched for the period of the lcd idle timer.
  *
  * Idle Timer:  1: LCD_DIM_OFF,         2: LCD_DIM_5_SECONDS.   3: LCD_DIM_10_SECONDS,
- *              4: LCD_DIM_30_SECONDS,  4: LCD_DIM_60_SECONDS,  5: LCD_DIM_120_SECONDS,
- *              6: LCD_DIM_300_SECONDS, 7: LCD_DIM_CUSTOM_SECONDS
+ *              4: LCD_DIM_30_SECONDS,  5: LCD_DIM_60_SECONDS,  6: LCD_DIM_120_SECONDS,
+ *              7: LCD_DIM_300_SECONDS, 8: LCD_DIM_CUSTOM_SECONDS
  *
  */
 #define DEFAULT_LCD_BRIGHTNESS      11  // 11: LCD_100_PERCENT - Brightness value from list
@@ -101,7 +101,7 @@
  *
  * :[2400, 9600, 19200, 38400, 57600, 115200, 250000, 500000, 1000000]
  */
-#define BAUDRATE 250000
+#define BAUDRATE 115200
 
 /**
  * Default Touch Mode Language
@@ -115,7 +115,7 @@
 /**
  *  Show bootscreen when starting up
  */
-//#define SHOW_BTT_BOOTSCREEN
+#define SHOW_BTT_BOOTSCREEN
 
 /**
  * The duration and frequency for the UI feedback sound.
@@ -330,6 +330,6 @@
 #define PRINT_END_GCODE "G90\nG1 E-4\nG92 E0\nM18\n" // Switch to absolute positioning, reduce filament pressure by performing small retract, reset extruder position, disable steppers
 
 // Cancel G-code - run this G-code after canceling print
-#define CANCEL_PRINT_GCODE "G28 XY R10\n" // Raise Z 10mm before homing X & Y
+#define PRINT_CANCEL_GCODE "G28 XY R10\n" // Home XY and raise Z 10mm
 
 #endif
