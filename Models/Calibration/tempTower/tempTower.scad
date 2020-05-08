@@ -2,11 +2,11 @@ X=+0; Y=+1; Z=+2;
 
 /* [General] */
 // temperature of the first lowest block
-start_temp = 255;
+start_temp = 250;
 // temperature of the last highest block
-end_temp = 240;
+end_temp = 230;
 // change in temperature between successively printed blocks
-temp_step = 2;
+temp_step = -2;
 
 
 /* [Detail Geometry] */
