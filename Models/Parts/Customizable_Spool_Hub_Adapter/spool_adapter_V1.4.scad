@@ -16,8 +16,8 @@
 part="right"; //[right:Right,left:Left,straight:Straight,star_right:Star Right,star_left:Star Left]
 
 //depended on the inner and outer diameter, you may also need to change the "Arms" settings to get a perfect working adapter. 
-tube_diameter=32; //[0:0.5:75]
-spool_diameter=53; //[0:1:150]
+tube_diameter=7.9; //[0:0.5:75]
+spool_diameter=75; //[0:1:150]
 height=15; //[0:100]
 number_of_arms=5; //[3:10]
 function get_number_of_arms() = (part == "straight" && number_of_arms % 2 > 0 ? 1 : 0) + number_of_arms;
@@ -34,12 +34,12 @@ wall=3.0; //[0:0.1:10]
 //I used 2mm on 32/53 Adapter with 6 arms and 2.4mm with 5 arms. It depends on the length.
 arm_thickness=2.4; //[0:0.1:5]
 //in mm. The adapter should fit tight to the spool, so the outer diameter is enlarged by this value.
-arm_compression=1.0; //[0:0.1:5]
+arm_compression=2.0; //[0:0.1:5]
 // in mm
 arm_end_diameter=5.0; //[0:0.5:20]
 
 /*[Expert]*/
-quality=80; //[60:Normal,80:Good,100:High]
+quality=100; //[60:Normal,80:Good,100:High]
 
 function get_part_index() = search([part], ["right","left","straight","star_right","star_left"])[0];
 
