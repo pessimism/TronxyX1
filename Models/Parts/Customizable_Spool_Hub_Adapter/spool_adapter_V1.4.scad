@@ -17,7 +17,7 @@ part="right"; //[right:Right,left:Left,straight:Straight,star_right:Star Right,s
 
 //depended on the inner and outer diameter, you may also need to change the "Arms" settings to get a perfect working adapter. 
 tube_diameter=7.9; //[0:0.5:75]
-spool_diameter=75; //[0:1:150]
+spool_diameter=53; //[0:1:150]
 height=15; //[0:100]
 number_of_arms=5; //[3:10]
 function get_number_of_arms() = (part == "straight" && number_of_arms % 2 > 0 ? 1 : 0) + number_of_arms;
