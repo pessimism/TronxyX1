@@ -21,8 +21,8 @@ num_patterns  =  4
 pattern_width =  5
 
 # pressure advance gradient (s)
-pressure_advance_min = 0.3
-pressure_advance_max = 0.6
+pressure_advance_min = 0.0
+pressure_advance_max = 0.5
 
 # center of print bed (mm)
 # needed to position this print in the middle of your print bed
